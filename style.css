@@ -61,11 +61,60 @@ nav {
 .textContainer h2 {
   font-size: 20px;
 }
+.openMenu,
+.closeMenu {
+    display: none;
+}
+
 
 /*mobile styles*/
 @media screen and (max-width: 700px) {
+    .openMenu,
+    .closeMenu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .openMenu {
+        color: white;
+    }
+
+    .closeMenu {
+        color: #ececec;
+    }
+ 
 
   header {
     background-color: blue;
   }
+  .nav-links{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+}
+.nav-links.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.nav-links li {
+    flex-direction: column;
+    align-items: end;
+}
+
+
+
+
 }

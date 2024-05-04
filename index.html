@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>MEDIA QUIERIES</title>
 </head>
 <body>
@@ -12,7 +13,9 @@
           <div class="logo">
             <img src="./img/nasa-logo.svg" />
           </div>
-          <ul class="nav-links">
+          <button id="open" class="openMenu"><i class="bi bi-list"></i></button>
+          <ul class="nav-links" id="nav">
+            <button id ="close" class="closeMenu"><i class="bi bi-x"></i></button>
             <li>News</li>
             <li>Gallery</li>
             <li>Contact</li>
@@ -29,6 +32,7 @@
         </div>
         <img src="./img/gpn-2001-000014.webp" />
       </section>
+      <script src="./index.js"></script>
     
 </body>
 </html>
